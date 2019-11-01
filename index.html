@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CORY'S WEB</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">PIC</a></li>
+                        <li><a href="#video" class="nav-link">youtube</a></li>
+                        <li><a href="#creative" class="nav-link">介紹</a></li>
+                        <li><a href="#activity" class="nav-link">內容</a></li>
+                        <li><a href="#standard" class="nav-link">資訊</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/Banner1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>森林</h1>
+                        <p>陽光充足</p>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/Banner2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>獼猴</h1>
+                        <p>活潑好動</p>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/Banner3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>遠景</h1>
+                        <p>一眺無疑</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="640" height="360" src="https://www.youtube.com/watch?v=3AKPaq0IaDk"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                溪頭森林園區
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片1" src="images/function01.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">四處美景</span>
+                                <span class="card-text">請四處張望</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>風景優美，身心舒暢</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片2" src="images/function02.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">四處美景</span>
+                                <span class="card-text">請四處張望</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>風景優美，身心舒暢</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片3" src="images/function03.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">四處美景</span>
+                                <span class="card-text">請四處張望</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>風景優美，身心舒暢</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <h3>MutiMediaDesign</h3>
+                    <p>VERY GOOD </br>
+                        帶給最棒的表演</br>
+                        大家開心</br>
+                        就開心
+                    <h1>Good Dance</h1>
+                    <p>Come on!!</br>
+                        YO YO YO
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="video/yo.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/activity_img1.jpg">
+                </div>
+
+                <div class="col-md-4 activity_price text-center">
+                    <h2>溪頭 <span>讚 </span>好玩</h2>
+                    <h1>AND</h1>
+                    <h2>Visual Studio Code is a lightweight</h2>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/activity_img2.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 規格 -->
+    <section id="standard" class="standard_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <table class="table table-hover">
+                        <tr>
+                            <h5 scope="col">溪頭自然森林園區：</h5>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="row">目的：</th>
+                                <td>為擴大民眾志願服務層面，運用社會熱心服務之人力資源</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">目前概況：</th>
+                                <td>大部份志工以服務於溪頭自然教育園區為多。
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">服務地點：</th>
+                                <td colspan="2">本處轄內（包括溪頭、下坪、鳳凰自然教育園區等區）。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">導覽解說申請：</th>
+                                <td colspan="2">預約導覽解說服務請於活動前10個工作日(不含週六、日)提出申請。</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <table class="table">
+                        <tr>
+                            <h5 scope="col">  繳費方式：</h5>
+                        </tr>
+                        <ul class="standard_use">
+                            <li>繳費請以電匯方式匯至本處，匯款資料如下：</li>
+                            <li>戶名：臺灣大學-生農學院實驗林管理處415專戶</li>
+                            <li>銀行：彰化銀行南投分行    銀行代碼：009</li>
+                            <li>國庫帳號：59180400068800</li>
+                        </ul>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 貼心提醒 -->
+    <section>
+        <div class="container content">
+            <div class="row remind">
+                <h4></h4>
+                <div class="w-100"></div>
+                <p></p>
+                <ul>
+
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/logo_blue.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>hello world </li>
+                        <li>service@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>Shameless is the best song </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
